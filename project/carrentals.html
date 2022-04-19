@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>Car Rental</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=text-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+          *
+          {
+              padding: 0;
+              margin: 0;
+          }  
+    
+          .header
+          {
+              height: 100%;
+              background-image: url('https://s3-prod-europe.autonews.com/s3fs-public/VW%20cars.jpg' );
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+              padding-top: 30px; 
+              text-align: center;
+              color: #fff;
+          }
+          .header img
+          {
+               width: 170px; 
+               float: left;
+          }
+          .login-btn
+          {
+              width: 100px;
+              padding: 8px 0;
+              outline: none !important;
+              border: 2px solid #fff;
+              border-radius: 50px;
+              background:transparent ;
+              color: #fff;
+              float: right;
+          }
+          .header h1
+          {
+               padding: 230px;
+               padding-bottom: 0;
+               font-size: 55px;
+
+          }
+          .Input
+          {
+              width: 90%;
+              max-width: 500px;
+              border-radius: 30px;
+              background:#fff;
+              margin: auto;
+              padding: 2px;
+          }
+          .form-control
+          {
+              border: 0 !important;
+              border-radius: 30px !important;
+              margin: 2px;
+              box-shadow: none !important;
+          }
+          .Input-text 
+          {
+              width: 100px;
+              background-image: linear-gradient(#00ff7e,#1f3d90);
+              background: 0 !important;
+               color: #fff !important;
+               padding: 0 25px !important;
+               border-radius: 30px !important;
+               box-shadow: none !important;
+          }
+          .features
+          {
+              padding: 100px 0;
+              text-align: center;
+
+          }
+          .h1{
+              text-align: center;
+              padding: bottom 30px; 
+          }
+          .feature-img img
+          {
+              width:100% ;
+          }
+          .price
+          {
+               width: 50px;
+               height: 50px;
+               background: #ff5722;
+               color: #fff;
+               font-weight: 600;
+               border-radius: 80%;
+               padding: 10px;
+               box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+               position: absolute;
+               left: 20px;
+               bottom: -25px;
+          }
+          .feature-img
+          {
+              position: relative;
+          }
+          .rating
+          {
+              padding: 3px;
+              float: right;
+              background: #fff;
+              right: 0;
+              position: absolute;
+          }
+          .features .fa
+          {
+              font-size:  15px;
+              color:#ff5722;
+          }
+          .feature-details
+          {
+              padding: 20px;
+              text-align: justify;
+          }
+          .feature-details h4
+          {
+              font-weight: 600;
+              margin-top: 20px;
+          }
+          .feature-details fa
+          {
+              margin-right: 5px;
+          }
+          .feature-box
+          {
+              box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+              margin-bottom: 30px;
+          }
+          .gallery
+          {
+              padding: 100px 0;
+              background: #efefef;
+              text-align: center;
+          }
+          .gallery-box img
+          {
+              width: 100%;
+              border-radius: 10px;
+              cursor: pointer;
+              transition: 1s;
+          }
+          .gallery-box img:hover
+          {
+              transform: scale(1.1);
+          }
+          .gallery-box h4
+          {
+            display: block;
+            color: #fff;
+            text-shadow: -2px 2px 2px #000;
+            font-weight: 600;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+          }
+          .gallery-box
+          {
+              position: relative;
+              margin-bottom: 30px;
+          }
+        </style>
+    </head>
+    <body>
+        <section class="header">
+            <div class="container">
+              
+            </div>
+            <h1>K3 Car Rental</h1>
+        </section>
+        <section class="features">
+          <h1>Featured Destinations</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-primary">
+                        <h3 class="text-center">BMW</h3>
+                    </div>
+                    <div class="panel-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdKOxfLebh2jYyrNPgYowJrzyjXwGpveKM2A&usqp=CAU" width="98%" class="center-block">
+                        <h4 class="text-center"> New in Stock</h4>
+                        <p>BMW or by its full name Bayerische Motoren Werke AG, is a German manufacturer of luxury vehicles. 
+                            But BMW doesn't just produce brilliant luxury road cars, 
+                            they are also famed for their contribution to sports cars and motorcycles.</p>
+                    </div>
+                    <div class="panel-footer">
+                        <center><button class="btn btn-info">View Detalis<br/><span class="label label-warning">5 Cars in Stock</span></button></center>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-primary">
+                        <h3 class="text-center">BMW</h3>
+                    </div>
+                    <div class="panel-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdKOxfLebh2jYyrNPgYowJrzyjXwGpveKM2A&usqp=CAU" width="98%" class="center-block">
+                        <h4 class="text-center"> New in Stock</h4>
+                        <p>BMW or by its full name Bayerische Motoren Werke AG, is a German manufacturer of luxury vehicles. 
+                            But BMW doesn't just produce brilliant luxury road cars, 
+                            they are also famed for their contribution to sports cars and motorcycles.</p>
+                    </div>
+                    <div class="panel-footer">
+                        <center><button class="btn btn-info">View Detalis<br/><span class="label label-warning">5 Cars in Stock</span></button></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <h3 class="text-center">BMW</h3>
+                </div>
+                <div class="panel-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdKOxfLebh2jYyrNPgYowJrzyjXwGpveKM2A&usqp=CAU" width="98%" class="center-block">
+                    <h4 class="text-center"> New in Stock</h4>
+                    <p>BMW or by its full name Bayerische Motoren Werke AG, is a German manufacturer of luxury vehicles. 
+                        But BMW doesn't just produce brilliant luxury road cars, 
+                        they are also famed for their contribution to sports cars and motorcycles.</p>
+                </div>
+                <div class="panel-footer">
+                    <center><button class="btn btn-info">View Detalis<br/><span class="label label-warning">5 Cars in Stock</span></button></center>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+                   
+       </section>
+    </body>

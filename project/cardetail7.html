@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CarsDetails</title>
+        <style>
+          *{
+              margin: 0;
+              padding: 0;
+              font-family: 'Roboto',sans-serif;
+          }
+          .container{
+              width: 100px;
+              height: 100vh;
+              background: linear-gradient(#fff);
+              position: relative;
+              padding-left: 8%;
+              padding-right: 8%;
+              box-sizing: border-box;
+
+          }
+          nav{
+             display: flex;
+             align-items: center;
+             height: 80px;
+             position: relative; 
+          }
+          nav img{
+              width: 30px;
+              cursor: pointer;
+          }
+          nav ul{
+              position: absolute;
+              top: 40px;
+              left: 1200;
+
+          }
+          nav ul li{
+              list-style: none;
+              color: #a1a1a1;
+              font-size: 12px;
+              margin-bottom: 15px;
+              cursor: pointer;
+          }
+          nav ul::after{
+              content: '';
+              width: 1px;
+              height: 130px;
+              background: #d0d0d0;
+              position: absolute;
+              top: 20px;
+              left: -10px;
+          }
+          .content{
+            max-width: 600px;
+            margin-top: 550px;
+          }
+          .content h1{
+              font-size: 60px;
+          }
+          .content p{
+              max-width: 450px;
+              color: #a1a1a1;
+              font-size: 15px;
+              font-weight: 300;
+              line-height: 22px;
+              margin: 40px 0;
+          }
+          .content button{
+              width: 160px;
+              padding: 10px 0;
+              border: none;
+              outline: none;
+              font-size: 16px;
+              background: red;
+              box-shadow: 0 3px 6px rgba(0,0,0,0.6);
+              cursor: pointer;
+          }
+          .car-image{
+              width: 40%;
+              position: absolute;
+              right: 70px;
+              bottom: 60px;
+              animation: run 2s linear 2;
+              animation: animate 2s linear;
+          }
+          .bottom-menu{
+              display: flex;
+              position: absolute;
+              bottom: 50px;
+          }
+          .bottom-menu div{
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              margin-right: 50px;
+          }
+          .bottom-menu img{
+              width: 25px;
+              margin-right: 15px;
+          }
+          .dark-mode {
+             background-color: black;
+            color: white;
+          }
+         @keyframes run{
+              0%{
+                  transform: translate(-100px,-100px);
+              }
+              100%{
+                  transform: translate(0px,0px);
+              }
+          }
+          @keyframes animate{
+              0%{
+                  transform: scale(1);
+              }
+              80%{
+                  transform: scale(0.60);
+              }
+              95%{
+                  transform: scale(1.10);
+              }
+              100%{
+                  transform: scale(1);
+              }
+          }
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      
+        <div class="container">
+            <nav>
+                <a href="home.html">
+                     <img  src="menu.png">
+                </a>
+                <div class="content">
+                  <h1>Accelerating The Future.</h1>
+                     <p>In 2020 we are looking back at our legacy and proudly celebrating our rich,unparalleled 110 year long History full of  passion, craftsmanship, dynamics and elegance.</p>
+                    <a href="datasheet2.html"><button type="button">Data Sheet</button></a> 
+                     <button onclick="myFunction()">Toggle dark mode</button>
+                 <script>
+                     function myFunction() {
+                     var element = document.body;
+                     element.classList.toggle("dark-mode");
+                     }
+                 </script>
+                </div>
+                <ul>
+                    <a href="Gallery.html">
+                     <li><img src="car_icon.png"></li>
+                    </a>
+                    <li>Engine</li>
+                    <li>Types</li>
+                    <li>Brakes</li>
+                    <li>Gearbox</li>
+                    <li>Cooling</li>
+                </ul>
+            </nav>
+            <div class="bottom-menu">
+                <div>
+                    <img src="icon1.png"><p>252 mph</p>
+                </div>
+                <div>
+                    <img src="icon2.png"><p>1,1001 hp</p>
+                </div>
+                <div>
+                    <img src="icon3.png"><p>922 lbf.ft</p>
+                </div>
+                <div>
+                    <img src="icon4.png"><p>$1.7 Million</p>
+                </div>
+
+            </div>
+        </div>
+            <img src="cars/icon15.png" class="car-image">
+    </body>
+</html>

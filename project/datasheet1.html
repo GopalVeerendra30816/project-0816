@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<title>Car RENTAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {
+  font-family:"Lato", sans-serif
+  }
+.mySlides {
+  display:none
+  }
+.w3-tag, .fa {
+  cursor:pointer
+  }
+.w3-tag {
+  height:15px;
+  width:15px;padding:0;
+  margin-top:6px
+  }
+  .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background:url(bg.jpg);
+            background-size: cover;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact .content h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: #fff;
+
+        }
+        .contact .content p{
+            font-weight: 300;
+            color: #fff;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .container .contactInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container .contactInfo .box{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .container .contactInfo .box .icon{
+            min-width: 60px;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+        .container .contactInfo .box .text{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #fff;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .container .contactInfo .box .text h3{
+            font-weight: 500;
+            color: #00bcd4;
+        }
+        .contactForm{
+            width: 40%;
+            padding: 40px;
+            background: #fff;
+        }
+        .contactForm h2{
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .contactForm .inputBox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contactForm .inputBox input,.contactForm .inputBox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactForm .inputBox span{
+            position:absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;  
+        }
+        .contactForm .inputBox input:focus ~ span,
+        .contactForm .inputBox input:valid ~ span,
+        .contactForm .inputBox textarea:focus ~ span,
+        .contactForm .inputBox textarea:valid ~ span{
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactForm .inputBox input[type="submit"]{
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+        @media (max-width:991px){
+            .contact{
+                padding: 50px;
+            }
+            .container{
+                flex-direction: column;
+            }
+            .container .contactInfo{
+                margin-bottom: 40px;
+            }
+            .container .contactInfo,.contactForm{
+                width: 100%;
+            }
+        }
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="home.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">Plans</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="About Us.html" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="Contact Us.html" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>CAR RENTAL</b></h1>
+  </div>
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/8/7c/87ce25ee-c57c-503a-ab7c-4ede5bcf26d1/598473cfedadb.image.jpg?resize=1200%2C918" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Chevrolet Spark</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="https://www.cartoq.com/wp-content/uploads/2015/05/2016-Chevrolet-Spark-1.jpg" style="width:100%">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Chevrolet Beat</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="https://pictures.dealer.com/d/danyounggmcbuickchevrolet/0043/1642773065051d64915263994c269d7bx.jpg?impolicy=downsize&w=568" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Chevrolet Optra</span>
+      </div>
+    </div>
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>Design</h3>
+      <p>Chevrolet has revealed the 2020 C8 Corvette, featuring for the first time a mid-engine layout and showcasing an evolution of the design DNA form the previous generation.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>Branding</h3>
+      <p>Chevrolet Division of General Motors Company, is an American automobile division of the American manufacturer General Motors (GM).</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>Consultation</h3>
+      <p>When it’s time to service your vehicle, trust the Chevrolet Certified Service experts to handle all your needs. No one knows your Chevrolet better than we do</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Promises</h3>
+      <p>With its commitment to unmatched style, quality and reliability, Chevrolet promises to bring more delight to its customers in the coming year..</p>
+    </div>
+  </div>
+  <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+      <h3>Pricing Plans</h3>
+      <p>Choose a pricing plan that fits your needs.</p>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Chevrolet Spark</li>
+        <li class="w3-padding-16"><b>18.0 kmpl</b>ARAI Mileage</li>
+        <li class="w3-padding-16"><b>Petrol</b> Fuel Type</li>
+        <li class="w3-padding-16"><b>995 cc</b>Engine Displacement</li>
+        <li class="w3-padding-16"><b>62.1bhp</b>Max Power </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">1000rs</h2>
+          <span class="w3-opacity">per day</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Rent Now</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Chevrolet Beat</li>
+        <li class="w3-padding-16"><b>18.0 kmpl</b> ARAI Mileage</li>
+        <li class="w3-padding-16"><b>Petrol</b> Fuel Type</li>
+        <li class="w3-padding-16"><b>1199 cc</b> Engine Displacement</li>
+        <li class="w3-padding-16"><b>79bhp</b> Max Power</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">1500rs</h2>
+          <span class="w3-opacity">per day</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Rent Now</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Chevrolet Optra</li>
+        <li class="w3-padding-16"><b>17.4 kmpl</b>  ARAI Mileage</li>
+        <li class="w3-padding-16"><b>Petrol</b>Fuel Type</li>
+        <li class="w3-padding-16"><b>1599 cc</b> Engine Displacement</li>
+        <li class="w3-padding-16"><b>104 PS</b> Max Power</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">2000rs</h2>
+          <span class="w3-opacity">per day</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Rent Now</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="nithin.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>nithin</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="prem.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>prem chand</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="veer.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>veerendra</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>The major systems of an automobile are the engine, fuel system, transmission, electrical system, cooling and lubrication system, and the chassis, which includes the suspension system, braking system, wheels and tires, and the body.</p>
+    </div>
+     <div class="container">
+        <div class="contactInfo">
+           <div class="box">
+              <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+              <div class="text">
+                 <h3>Address</h3>
+                 <p>viijayawada vaddaswaram near kluniversity</p>
+              </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="text">
+                   <h3>Phone</h3>
+                   <p>080-6633-5679</p>
+                </div>
+            </div>
+              <div class="box">
+                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="text">
+                   <h3>Email</h3>
+                   <p>K3CarsandServices@gmail.com</p>
+                </div>
+              </div>
+           </div>
+           <div class="contactForm">
+             <form>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                   <textarea required="required"></textarea>
+                    <span>Type your Message</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="Send">
+                </div>
+             </form>
+           </div>
+      </div>
+  </section>
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Footer</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
